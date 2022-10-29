@@ -1,0 +1,11 @@
+.circle {
+    width: 66px;
+    height: 66px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+}

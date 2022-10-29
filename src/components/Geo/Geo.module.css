@@ -1,0 +1,10 @@
+.geoico {
+    height: 25px;
+    width: 25px;
+    padding-right: 8px;
+}
+
+.geo {
+    display: flex;
+    align-items: center;
+}
