@@ -47,10 +47,11 @@
 }
 
 .courses {
+    display: flex;
     padding-top: 0.9rem;
     color: rgba(255,255,255);
     font-size: 14pt;
-    opacity: 0.5;
+    
 }
 
 .courser {
@@ -58,6 +59,19 @@
     color: red;
 }
 
-.course:nth-child(3) {
-    padding-left: 25px;
+.eur {
+    margin-left: 25px;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.eur:hover, .usd:hover {
+    opacity: 1;
+}
+
+.usd {
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.5s ease;
 }

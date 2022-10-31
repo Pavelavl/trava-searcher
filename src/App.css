@@ -2,7 +2,8 @@
 
 body {
     font-family: 'Comfortaa';
-    background-color: #161617;
+    background: radial-gradient(circle at 100%, #6bbd96, #161617);
+    background-size: 400% 100%;
     font-size: 1.25rem;
     color: white;
     margin: 0;

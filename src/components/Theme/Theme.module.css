@@ -1,4 +1,11 @@
 .sun {
     height: 33px;
     width: 33px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    opacity: 0.5;
+}
+
+.sun:hover {
+    opacity: 1;
 }

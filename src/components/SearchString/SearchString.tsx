@@ -14,10 +14,14 @@ const SearchString: React.FC = (): JSX.Element => {
                     </div>
                 </form>
                 <div className={styles.courses}>
-                    <span className={styles.course}>USD 0,09</span>
-                    <span className={styles.courser}>-0,0005</span>
-                    <span className={styles.course}>EUR 0,08</span>
-                    <span className={styles.courser}>-0,00001</span>
+                    <div className={styles.usd}>
+                        <span className={styles.course}>USD 0,09</span>
+                        <span className={styles.courser}>-0,0005</span>
+                    </div>
+                    <div className={styles.eur}>
+                        <span className={styles.course}>EUR 0,08</span>
+                        <span className={styles.courser}>-0,00001</span>
+                    </div>
                 </div>
             </div>
         </div>
