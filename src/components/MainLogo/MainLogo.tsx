@@ -3,7 +3,7 @@ import logo from '../../assets/logo2.svg'
 import styles from './MainLogo.module.css'
 import Theme from '../Theme/Theme.tsx';
 
-function MainLogo() {
+function MainLogo(): JSX.Element {
   return (
     <div className="head">
       <div className={styles.circle}>

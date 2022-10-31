@@ -1,6 +1,6 @@
 import React from 'react'
 import sun from '../../assets/sun.svg'
-function Theme() {
+function Theme(): JSX.Element {
   return (
     <img src={sun} alt="" />
   )

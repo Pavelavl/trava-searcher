@@ -4,7 +4,7 @@ import MainLogo from './components/MainLogo/MainLogo';
 import Weather from './components/Weather/Weather';
 import Geo from './components/Geo/Geo';
 
-function App() {
+function App(): JSX.Element {
   return (
     <main>
       <div className="top">
