@@ -5,7 +5,7 @@ import Theme from '../Theme/Theme.tsx';
 
 const MainLogo: React.FC = (): JSX.Element => {
   return (
-    <div className="head">
+    <div className={styles.head}>
       <div className={styles.circle}>
         <img src={logo} alt="" />
       </div>

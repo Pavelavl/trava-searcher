@@ -3,6 +3,7 @@ import "./App.css";
 import MainLogo from './components/MainLogo/MainLogo';
 import Weather from './components/Weather/Weather';
 import Geo from './components/Geo/Geo';
+import SearchString from './components/SearchString/SearchString';
 
 const App: React.FC = (): JSX.Element => {
   return (
@@ -12,6 +13,7 @@ const App: React.FC = (): JSX.Element => {
         <Weather />
         <Geo />
       </header>
+      <SearchString />
     </main>
   );
 }

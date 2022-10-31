@@ -1,0 +1,63 @@
+.ctrblock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-flow: column nowrap;
+}
+
+.trava {
+    letter-spacing: 30px;
+    font-size: 5rem;
+    margin-bottom: 40px;
+}
+
+.searchbox {
+    display: flex;
+    align-items: center;
+    width: 55vw;
+    height: 6vh;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.mic {
+    width: 36px;
+    height: 46px;
+    padding: 10px 20px 0 0;
+    cursor: pointer;
+    transition: 0.5s ease;
+    stroke:black;
+}
+
+.mic:hover {
+    opacity: 0.5;
+}
+
+.search {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #161617;
+    padding: 0 0 0 1.5rem;
+    background: 0 0;
+}
+
+.courses {
+    padding-top: 0.9rem;
+    color: rgba(255,255,255);
+    font-size: 14pt;
+    opacity: 0.5;
+}
+
+.courser {
+    padding-left: 10px;
+    color: red;
+}
+
+.course:nth-child(3) {
+    padding-left: 25px;
+}
