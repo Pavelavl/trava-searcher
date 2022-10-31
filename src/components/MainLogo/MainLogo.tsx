@@ -3,7 +3,7 @@ import logo from '../../assets/logo2.svg'
 import styles from './MainLogo.module.css'
 import Theme from '../Theme/Theme.tsx';
 
-function MainLogo(): JSX.Element {
+const MainLogo: React.FC = (): JSX.Element => {
   return (
     <div className="head">
       <div className={styles.circle}>

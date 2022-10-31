@@ -2,7 +2,9 @@ import React from 'react'
 import sun from '../../assets/sun.svg'
 const Theme: React.FC = (): JSX.Element => {
   return (
-    <img src={sun} alt="" />
+    <div>
+      <img src={sun} alt="" style={{width: 33, height: 33}}/>
+    </div>
   )
 }
 
