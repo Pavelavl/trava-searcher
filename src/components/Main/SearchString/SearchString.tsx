@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from './SearchString.module.css'
-import mic from '../../assets/mic.svg'
+import mic from '../../../assets/mic.svg'
+
+const strslyle: string[] = [styles.searchbox, "gcse-search"]
 
 const SearchString: React.FC = (): JSX.Element => {
     return (
@@ -8,7 +10,7 @@ const SearchString: React.FC = (): JSX.Element => {
             <span className={styles.trava}>Trava</span>
             <div className={styles.stringblock}>
                 <form>
-                    <div className={styles.searchbox}>
+                    <div className={strslyle.join(" ")}>
                         <input className={styles.search} type="text" />
                         <div className={styles.mic}><img src={mic} alt="" /></div>
                     </div>

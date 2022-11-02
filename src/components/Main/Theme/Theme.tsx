@@ -1,5 +1,5 @@
 import React from 'react'
-import sun from '../../assets/sun.svg'
+import sun from '../../../assets/sun.svg'
 import styles from './Theme.module.css'
 
 const Theme: React.FC = (): JSX.Element => {

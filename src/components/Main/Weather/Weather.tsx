@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Weather.module.css'
-import weather from '../../assets/weather.svg'
+import weather from '../../../assets/weather.svg'
 
 const Weather: React.FC = (): JSX.Element => {
   return (
