@@ -8,7 +8,7 @@ const Search: React.FC = (): JSX.Element => {
   const [data, setData] = useState([])
   //https://jsonplaceholder.typicode.com/users
 
-  //https://www.googleapis.com/customsearch/v1?cx=e014fbd90e93841ac&key=[Your_Google_Api_Key]&q=${searchParams.get('q')}
+  //https://www.googleapis.com/customsearch/v1?cx=e014fbd90e93841ac&key=[your_Google_Api_Key]&q=${searchParams.get('q')}
   useMemo(() => {
     try {
       fetch(`https://jsonplaceholder.typicode.com/users`)
