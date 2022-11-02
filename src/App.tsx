@@ -10,7 +10,7 @@ const App: React.FC = (): JSX.Element => {
     <BrowserRouter>
       <Routes>
         <Route index element={<Main />} />
-        <Route path='/api' element={<Search />} />
+        <Route path='/search' element={<Search />} />
         <Route path='*' element={<div>Page not found</div>} />
       </Routes>
     </BrowserRouter>
