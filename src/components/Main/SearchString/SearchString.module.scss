@@ -1,0 +1,46 @@
+.ctrblock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-flow: column nowrap;
+
+    .trava {
+        letter-spacing: 30px;
+        font-size: 5rem;
+        margin-bottom: 40px;
+    }
+
+    .courses {
+        display: flex;
+        padding-top: 0.9rem;
+        color: rgba(255, 255, 255);
+        font-size: 14pt;
+
+        .courser {
+            padding-left: 10px;
+            color: red;
+        }
+
+        .eur {
+            margin-left: 25px;
+            opacity: 0.5;
+            cursor: pointer;
+            transition: 0.5s ease;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        .usd {
+            opacity: 0.5;
+            cursor: pointer;
+            transition: 0.5s ease;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}

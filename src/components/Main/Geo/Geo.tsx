@@ -1,6 +1,6 @@
 import React from 'react'
 import geo from '../../../assets/geo.svg'
-import styles from './Geo.module.css'
+import styles from './Geo.module.scss'
 const Geo: React.FC = (): JSX.Element => {
   return (
     <div className={styles.geo}>

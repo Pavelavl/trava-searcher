@@ -13,7 +13,7 @@ const Main: React.FC = (): JSX.Element => {
                 <Geo />
             </header>
             <SearchString />
-        </main>
+        </main >
     )
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
-import "./App.css";
-import Main from './components/Main/Main';
-import Search from './components/Search/Search';
+import "./Root.scss";
+import Main from './Main/Main';
+import Search from './Search/Search';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 

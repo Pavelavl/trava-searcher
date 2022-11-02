@@ -1,7 +1,7 @@
 import React from 'react'
-import styles from './SearchString.module.css'
-import mic from '../../../assets/mic.svg'
+import styles from './SearchString.module.scss'
 import { useNavigate } from 'react-router-dom'
+import SearchBlock from '../SearchBlock/SearchBlock'
 
 const SearchString: React.FC = (): JSX.Element => {
     const navigate = useNavigate()
@@ -16,12 +16,7 @@ const SearchString: React.FC = (): JSX.Element => {
         <div className={styles.ctrblock}>
             <span className={styles.trava}>Trava</span>
             <div className={styles.stringblock}>
-                <form onSubmit={handleSubmit}>
-                    <div className={styles.searchbox}>
-                        <input className={styles.search} type="text" placeholder='mmm.. nice trava'/>
-                        <div className={styles.mic}><img src={mic} alt="" /></div>
-                    </div>
-                </form>
+                <SearchBlock />
                 <div className={styles.courses}>
                     <div className={styles.usd}>
                         <span className={styles.course}>USD 0,09</span>
