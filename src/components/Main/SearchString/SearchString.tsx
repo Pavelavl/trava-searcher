@@ -4,14 +4,6 @@ import { useNavigate } from 'react-router-dom'
 import SearchBlock from '../SearchBlock/SearchBlock'
 
 const SearchString: React.FC = (): JSX.Element => {
-    const navigate = useNavigate()
-
-    const handleSubmit = (event: React.SyntheticEvent<EventTarget>) => {
-        const query: string | undefined = document.querySelector('input')?.value
-        event.preventDefault()
-        
-        navigate(`/search?q=${query}`,)
-    }
     return (
         <div className={styles.ctrblock}>
             <span className={styles.trava}>Trava</span>

@@ -9,12 +9,12 @@
         letter-spacing: 30px;
         font-size: 5rem;
         margin-bottom: 40px;
+        transition: color 0.5s linear;
     }
 
     .courses {
         display: flex;
         padding-top: 0.9rem;
-        color: rgba(255, 255, 255);
         font-size: 14pt;
 
         .courser {

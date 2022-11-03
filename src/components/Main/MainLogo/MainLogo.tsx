@@ -2,6 +2,7 @@ import React from 'react'
 import logo from '../../../assets/logo2.svg'
 import styles from './MainLogo.module.scss'
 import Theme from '../Theme/Theme.tsx';
+import useTheme from '../../../hooks/useTheme';
 
 const MainLogo: React.FC = (): JSX.Element => {
   return (
