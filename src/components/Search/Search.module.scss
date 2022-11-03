@@ -1,4 +1,31 @@
-.logo {
-    height: 85px;
-    width: 85px;
+html[data-theme='dark'] {
+    .logo {
+        height: 85px;
+        width: 85px;
+        background-image: url('../../assets/logo_white.svg');
+    }
+}
+
+html[data-theme='light'] {
+    .logo {
+        height: 85px;
+        width: 85px;
+        background-image: url('../../assets/logo.svg');
+    }
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.toper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1vw 0;
+    background-color: var(--background-search-block);
+    height: 100px;
+    border-bottom: 2px solid var(--background-search);
 }

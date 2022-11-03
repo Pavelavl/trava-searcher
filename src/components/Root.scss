@@ -9,7 +9,7 @@ body {
     margin: 0;
 }
 
-header {
+.container {
     padding: 2vh 2vw 0;
     position: fixed;
 }
@@ -18,9 +18,9 @@ html[data-theme='dark'] {
     --background-grad: radial-gradient(circle at 100%, #6bbd96, #161617);
     --color: white;
     --border-search: none;
-    --border-search-block: 1px solid #007140;
+    --border-search-block: 2px solid #007140;
     --background-search-block: #18181a;
-    --background-search: #161617;
+    --background-search: #2e2e2f;
     --boxshadow-search-block: none
 }
 
@@ -28,7 +28,7 @@ html[data-theme='light'] {
     --background-grad: radial-gradient(circle at 100%, #007140, #fff);
     --color: black;
     --border-search: 2px solid rgba(0, 113, 64, 0.4);
-    --border-search-block: 1px solid #007140;
+    --border-search-block: 2px solid #007140;
     --background-search-block: #fff;
     --background-search: #fff;
     --boxshadow-search-block: 0 0 5px rgba(0, 0, 0, 0.4)

@@ -8,6 +8,16 @@
     border: var(--border-search);
 }
 
+.searchbox_def {
+    display: flex;
+    align-items: center;
+    width: 30vw;
+    height: 43px;
+    border-radius: 11px;
+    background-color: var(--background-search-block);
+    border: var(--border-search-block);
+}
+
 .search {
     width: 100%;
     height: 100%;
@@ -20,15 +30,70 @@
     background: 0 0;
 }
 
+.search_def {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--color);
+    padding: 0 0 0 1.25rem;
+    background: 0 0;
+    font-family: inherit;
+}
+
 .mic {
-    width: 36px;
-    height: 46px;
-    padding: 10px 20px 0 0;
+    width: 25px;
+    height: 35px;
+    padding-right: 20px;
+    display: flex;
     cursor: pointer;
     transition: 0.5s ease;
-    stroke:black;
+    stroke: black;
 
     &:hover {
         opacity: 0.5;
     }
+}
+
+.mic_def {
+    display: flex;
+    padding-right: 20px;
+    width: 20px;
+    height: 25px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    stroke: black;
+    background-image: url('../../../assets/mic.svg');
+    background-repeat: no-repeat;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.sub {
+    height: 43px;
+    width: 100px;
+    background-color: #007140;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid #007140;
+    cursor: pointer;
+    transition: 0.2s ease;
+    margin-left: 25px;
+    font-family: inherit;
+    font-weight: bolder;
+
+    &:hover {
+        background-color: #161617;
+        color: #007140;
+    }
+}
+
+.subform {
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
 }

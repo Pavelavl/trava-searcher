@@ -7,11 +7,11 @@ import SearchString from './SearchString/SearchString';
 const Main: React.FC = (): JSX.Element => {
     return (
         <main>
-            <header>
+            <div className="container">
                 <MainLogo />
                 <Weather />
                 <Geo />
-            </header>
+            </div>
             <SearchString />
         </main >
     )
