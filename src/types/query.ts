@@ -1,6 +1,3 @@
-
-export type IData = [data: IRes, setData: React.Dispatch<React.SetStateAction<never[]>>]
-
 export interface IRes {
     kind: string,
     url: {
@@ -66,13 +63,13 @@ export interface IRes {
             displayLink: string,
             snippet: string,
             htmlSnippet: string,
-            cacheId?: string,
+            cacheId: string,
             formattedUrl: string,
             htmlFormattedUrl: string,
-            pagemap: {
-                metatags: [
+            pagemap?: {
+                cse_image: [
                     {
-                        viewport: string
+                        src: string
                     }
                 ]
             }
@@ -85,13 +82,13 @@ export interface IRes {
             displayLink: string,
             snippet: string,
             htmlSnippet: string,
-            cacheId?: string,
+            cacheId: string,
             formattedUrl: string,
             htmlFormattedUrl: string,
-            pagemap: {
-                metatags: [
+            pagemap?: {
+                cse_image: [
                     {
-                        viewport: string
+                        src: string
                     }
                 ]
             }
@@ -104,13 +101,13 @@ export interface IRes {
             displayLink: string,
             snippet: string,
             htmlSnippet: string,
-            cacheId?: string,
+            cacheId: string,
             formattedUrl: string,
             htmlFormattedUrl: string,
-            pagemap: {
-                metatags: [
+            pagemap?: {
+                cse_image: [
                     {
-                        viewport: string
+                        src: string
                     }
                 ]
             }
@@ -123,13 +120,13 @@ export interface IRes {
             displayLink: string,
             snippet: string,
             htmlSnippet: string,
-            cacheId?: string,
+            cacheId: string,
             formattedUrl: string,
             htmlFormattedUrl: string,
-            pagemap: {
-                metatags: [
+            pagemap?: {
+                cse_image: [
                     {
-                        viewport: string
+                        src: string
                     }
                 ]
             }
@@ -142,13 +139,13 @@ export interface IRes {
             displayLink: string,
             snippet: string,
             htmlSnippet: string,
-            cacheId?: string,
+            cacheId: string,
             formattedUrl: string,
             htmlFormattedUrl: string,
-            pagemap: {
-                metatags: [
+            pagemap?: {
+                cse_image: [
                     {
-                        viewport: string
+                        src: string
                     }
                 ]
             }
@@ -161,13 +158,13 @@ export interface IRes {
             displayLink: string,
             snippet: string,
             htmlSnippet: string,
-            cacheId?: string,
+            cacheId: string,
             formattedUrl: string,
             htmlFormattedUrl: string,
-            pagemap: {
-                metatags: [
+            pagemap?: {
+                cse_image: [
                     {
-                        viewport: string
+                        src: string
                     }
                 ]
             }
@@ -180,13 +177,13 @@ export interface IRes {
             displayLink: string,
             snippet: string,
             htmlSnippet: string,
-            cacheId?: string,
+            cacheId: string,
             formattedUrl: string,
             htmlFormattedUrl: string,
-            pagemap: {
-                metatags: [
+            pagemap?: {
+                cse_image: [
                     {
-                        viewport: string
+                        src: string
                     }
                 ]
             }
@@ -199,13 +196,13 @@ export interface IRes {
             displayLink: string,
             snippet: string,
             htmlSnippet: string,
-            cacheId?: string,
+            cacheId: string,
             formattedUrl: string,
             htmlFormattedUrl: string,
-            pagemap: {
-                metatags: [
+            pagemap?: {
+                cse_image: [
                     {
-                        viewport: string
+                        src: string
                     }
                 ]
             }
@@ -218,13 +215,13 @@ export interface IRes {
             displayLink: string,
             snippet: string,
             htmlSnippet: string,
-            cacheId?: string,
+            cacheId: string,
             formattedUrl: string,
             htmlFormattedUrl: string,
-            pagemap: {
-                metatags: [
+            pagemap?: {
+                cse_image: [
                     {
-                        viewport: string
+                        src: string
                     }
                 ]
             }
@@ -237,13 +234,13 @@ export interface IRes {
             displayLink: string,
             snippet: string,
             htmlSnippet: string,
-            cacheId?: string,
+            cacheId: string,
             formattedUrl: string,
             htmlFormattedUrl: string,
-            pagemap: {
-                metatags: [
+            pagemap?: {
+                cse_image: [
                     {
-                        viewport: string
+                        src: string
                     }
                 ]
             }

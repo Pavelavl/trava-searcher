@@ -15,7 +15,7 @@
     height: 43px;
     border-radius: 11px;
     background-color: var(--background-search-block);
-    border: var(--border-search-block);
+    border: var(--border-search-string);
 }
 
 .search {
@@ -74,7 +74,7 @@
 }
 
 .sub {
-    height: 43px;
+    height: 46px;
     width: 100px;
     background-color: #007140;
     font-size: 16px;
@@ -85,9 +85,11 @@
     margin-left: 25px;
     font-family: inherit;
     font-weight: bolder;
+    letter-spacing: 1px;
+    color: var(--color-btn);
 
     &:hover {
-        background-color: #161617;
+        background-color: var(--background-search-block);
         color: #007140;
     }
 }

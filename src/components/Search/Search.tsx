@@ -1,22 +1,22 @@
 import { useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom';
 import styles from './Search.module.scss'
-import logo from '../../assets/logo_white.svg'
 import SearchBlock from '../Main/SearchBlock/SearchBlock';
-import '../Root.scss'
 import Theme from '../Main/Theme/Theme';
 import { IRes } from '../../types/query';
+import Item from './Item/Item';
+
 
 
 const Search: React.FC = (): JSX.Element => {
   const [searchParams] = useSearchParams()
   const [data, setData] = useState<IRes>()
+  const query: string | null = searchParams.get('q');
   //https://jsonplaceholder.typicode.com/users
 
-  //https://www.googleapis.com/customsearch/v1?cx=e014fbd90e93841ac&key=AIzaSyAP8ZRohc3B5Hirc_QzeC0lEXYSEhSdu7I&q=${searchParams.get('q')}
   useMemo(() => {
     try {
-      fetch(`https://jsonplaceholder.typicode.com/users`)
+      fetch(`https://www.googleapis.com/customsearch/v1?cx=e014fbd90e93841ac&key=AIzaSyAP8ZRohc3B5Hirc_QzeC0lEXYSEhSdu7I&q=${query}`)
         .then(res => res.json())
         .then(res => setData(res))
     } catch (e) {
@@ -35,7 +35,7 @@ const Search: React.FC = (): JSX.Element => {
         </div>
         <Theme />
       </div>
-      {data?.items&& <div>a da?</div>}
+      <Item data={data}/>
     </div>
   )
 }
