@@ -43,6 +43,7 @@ html[data-theme='light'] {
     border: var(--border-search-block);
     border-radius: 10px;
     transition: 0.5s ease;
+    justify-content: space-between;
 
     &:hover {
         box-shadow: 0 0 7px 7px #0071402d;
@@ -52,7 +53,7 @@ html[data-theme='light'] {
 .textpart {
     display: flex;
     flex-direction: column;
-    
+    min-height: 100px;
 }
 
 .desc {
@@ -86,4 +87,8 @@ html[data-theme='light'] {
             color: #0093fc;
         }
     }
+}
+
+.imgpart {
+    padding-left: 50px;
 }

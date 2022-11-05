@@ -8,7 +8,7 @@ const SearchString: React.FC = (): JSX.Element => {
         <div className={styles.ctrblock}>
             <span className={styles.trava}>Trava</span>
             <div className={styles.stringblock}>
-                <SearchBlock choice='main'/>
+                <SearchBlock choice='main' placeholder='mm.. nice trava'/>
                 <div className={styles.courses}>
                     <div className={styles.usd}>
                         <span className={styles.course}>USD 0,09</span>

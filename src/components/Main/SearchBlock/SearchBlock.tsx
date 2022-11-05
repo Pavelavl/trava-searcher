@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import mic from '../../../assets/mic.svg'
 import styles from './SearchBlock.module.scss'
 
-const SearchBlock = ( { choice }: {choice: string} ): JSX.Element => {
+const SearchBlock = ( { choice, placeholder }: {choice: string, placeholder: string } ): JSX.Element => {
     const navigate = useNavigate()
 
     const handleSubmit = (event: React.SyntheticEvent<EventTarget>) => {
@@ -17,7 +17,7 @@ const SearchBlock = ( { choice }: {choice: string} ): JSX.Element => {
             return (
                 <form onSubmit={handleSubmit}>
                     <div className={styles.searchbox}>
-                        <input className={styles.search} type="text" placeholder='mmm.. nice trava' />
+                        <input className={styles.search} type="text" placeholder={placeholder} />
                         <div className={styles.mic}><img src={mic} alt="" /></div>
                     </div>
                 </form>
@@ -26,7 +26,7 @@ const SearchBlock = ( { choice }: {choice: string} ): JSX.Element => {
             return (
                 <form onSubmit={handleSubmit} className={styles.subform}>
                     <div className={styles.searchbox_def}>
-                        <input className={styles.search_def} type="text" />
+                        <input className={styles.search_def} type="text" placeholder={placeholder}/>
                         <div className={styles.mic_def}></div>
                     </div>
                     <button type="submit" className={styles.sub}>Найти</button>
