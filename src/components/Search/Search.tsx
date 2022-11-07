@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom';
 import styles from './Search.module.scss'
 import SearchBlock from '../Main/SearchBlock/SearchBlock';
@@ -7,40 +7,41 @@ import { IRes } from '../../types/query';
 import Items from './Item/Items';
 
 
-
 const Search: React.FC = (): JSX.Element => {
   const [searchParams] = useSearchParams()
-  const [data, setData] = useState<IRes>()
+  const [data, setData] = useState<IRes[]>([])
   const param: string = searchParams.get('q') ?? '';
-  const query: string = `https://www.googleapis.com/customsearch/v1?cx=e014fbd90e93841ac&key=AIzaSyAP8ZRohc3B5Hirc_QzeC0lEXYSEhSdu7I&q=${param}&start=`
+  const query: string = `https://www.ggoogleapis.com/customsearch/v1?cx=e014fbd90e93841ac&key=AIzaSyAP8ZRohc3B5Hirc_QzeC0lEXYSEhSdu7I&q=${param}&start=`
   const [pages, setPages] = useState(0)
-  let isLoading = false
-  let shouldLoad = true
+  const [fetching, setFetching] = useState(true)
 
-  async function checkPosition() {
-    const screenHeight = window.innerHeight
-    const scrolled = window.scrollY
-    const position = scrolled + screenHeight
+  useEffect(() => {
+    if (fetching) {
+      fetch(query + pages)
+      .then(res => res.json())
+      .then(res => {
+        setData(prev => [...prev, res])
+        setPages(prev => prev + 10)
+      })
+      .finally(() => setFetching(false))
+    }
+  })
 
-    if (position >= screenHeight) {
-      setPages(prev => prev + 10)
-      await getItemsFromApi()
+  useEffect(() => {
+    console.log('pis')
+    document.addEventListener('scroll', scrollHandler)
+    return () => document.removeEventListener('scroll', scrollHandler)
+  })
+
+  const scrollHandler = ()  => {
+    if (document.documentElement.scrollHeight - (document.documentElement.scrollTop + window.innerHeight) < 10) {
+      setFetching(true)
     }
   }
 
-  ; (() => {
-    window.addEventListener('scroll', checkPosition)
-    window.addEventListener('resize', checkPosition)
-  })()
-
-  const getItemsFromApi = useCallback(async () => {
-    if (isLoading || !shouldLoad) return
-    isLoading = true
-    fetch(query + pages)
-      .then(res => res.json())
-      .then(res => setData(res))
-      .catch(e => console.log('Error:', e))
-  }, [searchParams])
+  console.log('render')
+  console.log(data)
+  console.log(pages)
 
   return (
     <div id='main'>
@@ -51,7 +52,7 @@ const Search: React.FC = (): JSX.Element => {
         </div>
         <Theme />
       </div>
-      
+      <Items data={data} />
     </div>
   )
 }
