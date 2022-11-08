@@ -5,7 +5,7 @@
 }
 
 .weather {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--color);
     display: flex;
     align-items: center;
@@ -15,6 +15,24 @@
     cursor: pointer;
     width: 58px;
 
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.geoico {
+    height: 25px;
+    width: 25px;
+    padding-right: 8px;
+}
+
+.geo {
+    display: flex;
+    align-items: center;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.5s ease;
+    width: 130px;
     &:hover {
         opacity: 1;
     }

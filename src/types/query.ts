@@ -1,3 +1,15 @@
+export interface IWeather {
+    days: [
+        {
+            temp: number
+        }
+    ]
+}
+
+export interface IGeo {
+    city: string
+}
+
 export interface IRes {
     kind: string,
     url: {
