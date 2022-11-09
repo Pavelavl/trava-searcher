@@ -55,8 +55,10 @@ const SearchBlock = ({ choice, placeholder }: { choice: string, placeholder: str
 
     const handleSubmit = (event: React.FormEvent) => {
         event.preventDefault()
+        query = searchStr.value
 
         navigate(`/search?q=${query}`)
+        window.location.reload()
     }
 
     switch (choice) {
@@ -76,7 +78,7 @@ const SearchBlock = ({ choice, placeholder }: { choice: string, placeholder: str
                         <input className={styles.search_def} type="text" placeholder={placeholder} />
                         <div onClick={() => setIsListening(prev => !prev)} className={styles.mic}><img src={!isListening ? micslash : mic} alt="" /></div>
                     </div>
-                    <button type="submit" disabled={!value} className={styles.sub}>Найти</button>
+                    <button type="submit" className={styles.sub}>Найти</button>
                 </form>
             )
     }

@@ -9,7 +9,7 @@
     color: var(--color);
     display: flex;
     align-items: center;
-    padding: 20px 0;
+    padding-top: 20px;
     opacity: 0.5;
     transition: 0.5s ease;
     cursor: pointer;
@@ -33,7 +33,25 @@
     cursor: pointer;
     transition: 0.5s ease;
     width: 130px;
+    padding: 15px 0;
+
     &:hover {
         opacity: 1;
     }
+}
+
+.courses {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s ease;
+    opacity: 0.5;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.course {
+    font-size: 1.2rem;
 }

@@ -11,37 +11,4 @@
         margin-bottom: 40px;
         transition: color 0.5s linear;
     }
-
-    .courses {
-        display: flex;
-        padding-top: 0.9rem;
-        font-size: 14pt;
-        margin-left: 15px;
-
-        .courser {
-            padding-left: 10px;
-            color: red;
-        }
-
-        .eur {
-            margin-left: 25px;
-            opacity: 0.5;
-            cursor: pointer;
-            transition: 0.5s ease;
-
-            &:hover {
-                opacity: 1;
-            }
-        }
-
-        .usd {
-            opacity: 0.5;
-            cursor: pointer;
-            transition: 0.5s ease;
-
-            &:hover {
-                opacity: 1;
-            }
-        }
-    }
 }

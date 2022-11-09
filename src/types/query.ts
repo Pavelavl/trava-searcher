@@ -1,3 +1,9 @@
+export interface IUsd {
+    rates: {
+        RUB: number
+    }
+}
+
 export interface IWeather {
     days: [
         {
