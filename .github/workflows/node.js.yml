@@ -20,4 +20,5 @@ jobs:
       with:
         node-version: '16'
         cache: 'npm'
-    - run: serve -s build
+    - run: npm install
+    - run: npm start
