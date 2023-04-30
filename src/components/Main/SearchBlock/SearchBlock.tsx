@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import mic from '../../../assets/mic.svg'
 import micslash from '../../../assets/mic-slash.svg'
 import styles from './SearchBlock.module.scss'
+import { inherits } from 'util'
 
 const speechRec = window.webkitSpeechRecognition || window.SpeechRecognition
 const record = new speechRec()
@@ -14,8 +15,6 @@ const SearchBlock = ({ choice, placeholder }: { choice: string, placeholder: str
     const navigate = useNavigate()
     const searchStr = useRef<HTMLInputElement>(null)
     let query = searchStr.current!
-    
-    
     const [isListening, setIsListening] = useState(false)
 
     useEffect(() => {
