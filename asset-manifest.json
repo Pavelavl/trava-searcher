@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f683a1d9.css",
+    "main.js": "/static/js/main.153c5062.js",
+    "static/media/weather.svg": "/static/media/weather.6e9e6e5fddd3d14345f95e9e73381976.svg",
+    "static/media/logo2.svg": "/static/media/logo2.27851246b2440387b30ee3a7416ad89a.svg",
+    "static/media/logo_white.svg": "/static/media/logo_white.370d3719726999c3243e.svg",
+    "static/media/logo.svg": "/static/media/logo.b32baa2dfca586ddf5cd.svg",
+    "static/media/usd.svg": "/static/media/usd.47d2cd381626fc520687f07f67875b58.svg",
+    "static/media/sun.svg": "/static/media/sun.1332708db313425850c2290d9f62e90e.svg",
+    "static/media/mic-slash.svg": "/static/media/mic-slash.c9d6ea97350ee094b57720d7cb79734d.svg",
+    "static/media/moon.svg": "/static/media/moon.24ee3261419ced17ec4b51858f367e5c.svg",
+    "static/media/geo.svg": "/static/media/geo.604a5ce600995b3b242a6cd2180b9b50.svg",
+    "index.html": "/index.html",
+    "static/media/mic.svg": "/static/media/mic.4d4b18c4f10a20935d69324f4d8d2746.svg",
+    "main.f683a1d9.css.map": "/static/css/main.f683a1d9.css.map",
+    "main.153c5062.js.map": "/static/js/main.153c5062.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f683a1d9.css",
+    "static/js/main.153c5062.js"
+  ]
+}
